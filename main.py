@@ -14,7 +14,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="CSV to Postgres Pipeline",
-    summary="This is a data pipeline project that accepts CSV files, cleans the data by removing duplicate records, and loads the unique entries into the database. The pipeline ensures data integrity by preventing duplicate storage and provides a streamlined process for CSV data ingestion.",
+    summary="A simple pipeline to clean and load TLC trip record data into a PostgreSQL database.",
     lifespan=lifespan,
 )
 
